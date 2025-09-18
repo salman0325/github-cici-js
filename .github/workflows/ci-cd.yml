@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            docker pull hello-node-app:${{ github.sha }}
+            docker pull salmandevops290/hello-node-app:${{ github.sha }}
             docker stop hello-node-app || true
             docker rm hello-node-app || true
             docker run -d -p 80:3000 --name hello-node-app hello-node-app:${{ github.sha }}
