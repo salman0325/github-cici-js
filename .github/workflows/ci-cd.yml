@@ -42,4 +42,4 @@ jobs:
             docker pull salmandevops290/hello-node-app:${{ github.sha }}
             docker stop hello-node-app || true
             docker rm hello-node-app || true
-            docker run -d -p 80:3000 --name hello-node-app hello-node-app:${{ github.sha }}
+            docker run -d -p 80:3000 --name salmandevops290/hello-node-app hello-node-app:${{ github.sha }}
