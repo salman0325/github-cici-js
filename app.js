@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World from CI/CD!');
+  res.send('Hello this is my first CICD through Github Action!');
 });
 
 app.listen(port, () => {
