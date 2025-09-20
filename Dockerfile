@@ -1,4 +1,4 @@
-# Use official Node.js image
+# Use official Node.js image cheking for github webhook
 FROM node:18
 
 # Set working directory
